@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Home — MyApp</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="./styles/style.css" />
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <main class="container">
+    <h1>Welcome to MyApp</h1>
+    <p>A small modular demo — Signup, Login (Realtime DB), Todos from JSONPlaceholder.</p>
+
+    <div class="home-links">
+      <a href="signup.html">Signup</a>
+      <a href="login.html">Login</a>
+      <a href="todos.html">Todos</a>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script type="module">
+    import { createNavbar } from "./components/navbar.js";
+    import { createFooter } from "./components/footer.js";
+
+    document.getElementById('site-header').appendChild(createNavbar());
+    document.getElementById('site-footer').appendChild(createFooter());
+  </script>
+</body>
+</html>

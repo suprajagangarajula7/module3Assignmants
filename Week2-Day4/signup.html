@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Signup — MyApp</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="./styles/style.css" />
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <main class="container">
+    <h1>Signup</h1>
+    <form id="signupForm">
+      <label>Name (optional)</label>
+      <input id="name" type="text" />
+
+      <label>Email *</label>
+      <input id="email" type="email" required />
+
+      <label>Password *</label>
+      <input id="password" type="password" required minlength="6" />
+
+      <button type="submit">Signup</button>
+    </form>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script type="module" src="./scripts/signup.js"></script>
+</body>
+</html>
+
